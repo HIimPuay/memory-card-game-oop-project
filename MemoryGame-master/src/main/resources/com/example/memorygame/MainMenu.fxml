@@ -16,8 +16,8 @@
             <!-- Main Menu Buttons -->
                <Label text="Memory Card Game" style="-fx-font-size: 36px; -fx-font-weight: bold; -fx-text-fill: #abb2bf;" />
 
-               <Button prefWidth="200.0" text="Start Game" onAction="#handleStartGame" />
-               <Button prefWidth="200.0" text="High Scores" onAction="#handleViewHighScores" />
+               <Button prefWidth="200.0" text="Play Game" onAction="#handleStartGame" />
+               <Button prefWidth="200.0" text="How to Play" onAction="#handleHowtoplay" />
                <Button prefWidth="200.0" text="Exit" onAction="#handleExit" />
         
          </children>

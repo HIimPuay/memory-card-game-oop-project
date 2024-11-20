@@ -100,7 +100,7 @@
                      </children>
                   </GridPane>
                   <Button mnemonicParsing="false" onAction="#playAgain" prefWidth="200.0" text="Play Again" />
-                  <Button mnemonicParsing="false" onAction="#playWar" prefWidth="200.0" text="War Game" />
+                  <!-- <Button mnemonicParsing="false" onAction="#playWar" prefWidth="200.0" text="War Game" /> -->
                   <Button mnemonicParsing="false" onAction="#handleBackToMainMenu" prefWidth="200.0" text="Back to Main Menu" />
                </children>
             </HBox>

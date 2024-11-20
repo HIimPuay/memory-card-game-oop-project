@@ -1,12 +1,12 @@
 package com.example.memorygame;
 
+import java.io.IOException;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
-import java.io.IOException;
 
 public class Main extends Application {
 
@@ -22,7 +22,7 @@ public class Main extends Application {
         mainMenuScene = new Scene(root, 800, 600);
 
         // กำหนดค่าให้ Stage
-        stage.setTitle("Game Main Menu");
+        stage.setTitle("Memory Card Geme");
         stage.setScene(mainMenuScene);
         stage.show();
     }

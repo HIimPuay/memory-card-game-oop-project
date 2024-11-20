@@ -23,7 +23,7 @@ public class MainMenuController {
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
             // เปลี่ยน Scene ไปที่ Memory Game
-            stage.setTitle("Memory Game");
+            stage.setTitle("Memory Card Game");
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
@@ -34,8 +34,8 @@ public class MainMenuController {
     }
 
     @FXML
-    private void handleViewHighScores(ActionEvent event) {
-        System.out.println("Viewing High Scores...");
+    private void handleHowtoplay(ActionEvent event) {
+        System.out.println("Viewing How to Play...");
         // Add logic to display High Scores
     }
 
