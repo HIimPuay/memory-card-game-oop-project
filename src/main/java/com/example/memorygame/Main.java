@@ -22,7 +22,7 @@ public class Main extends Application {
         mainMenuScene = new Scene(root, 800, 600);
 
         // กำหนดค่าให้ Stage
-        stage.setTitle("Game Main Menu");
+        stage.setTitle("Memory Card Game");
         stage.setScene(mainMenuScene);
         stage.show();
     }

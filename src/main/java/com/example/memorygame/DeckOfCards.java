@@ -12,11 +12,9 @@ public class DeckOfCards {
         List<String> suits = Card.getValidSuits();
         List<String> faceNames = Card.getValidFaceNames();
 
-        for (String suit : suits)
-        {
-            for (String faceName : faceNames)
-            {
-                deck.add(new Card(suit,faceName));
+        for (String suit : suits) {
+            for (String faceName : faceNames) {
+                deck.add(new Card(suit, faceName));
             }
         }
     }
@@ -24,8 +22,7 @@ public class DeckOfCards {
     /**
      * This method will shuffle the card objects
      */
-    public void shuffle()
-    {
+    public void shuffle() {
         Collections.shuffle(deck);
     }
 
@@ -33,9 +30,8 @@ public class DeckOfCards {
      * This method will return the top card from the deck.
      * If the deck is empty, it will return null
      */
-    public Card dealTopCard()
-    {
-        if (deck.size()>0)
+    public Card dealTopCard() {
+        if (deck.size() > 0)
             return deck.remove(0);
         else
             return null;
@@ -44,8 +40,8 @@ public class DeckOfCards {
     /**
      * This returns the number of cards left in the deck
      */
-    public int getNumOfCards()
-    {
+    public int getNumOfCards() {
         return deck.size();
     }
+
 }

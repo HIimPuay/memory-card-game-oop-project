@@ -15,10 +15,12 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="1000.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.memorygame.MemoryGameController">
    <children>
+
       <VBox layoutX="413.0" layoutY="139.0" prefHeight="650.0" prefWidth="1000.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
+         <Label fx:id="titleLabel" text=" " style="-fx-font-size: 36px; -fx-font-weight: bold; -fx-text-fill: #abb2bf;" />
             <FlowPane fx:id="imagesFlowPane" alignment="CENTER" hgap="20.0" vgap="20.0">
-               <children>
+               <children> 
                   <ImageView fitHeight="205.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/3_of_hearts.png" />
@@ -100,8 +102,7 @@
                      </children>
                   </GridPane>
                   <Button mnemonicParsing="false" onAction="#playAgain" prefWidth="200.0" text="Play Again" />
-                  <Button mnemonicParsing="false" onAction="#playWar" prefWidth="200.0" text="War Game" />
-                  <Button mnemonicParsing="false" onAction="#handleBackToMainMenu" prefWidth="200.0" text="Back to Main Menu" />
+                  <Button mnemonicParsing="false" onAction="#handleBackTheme" prefWidth="200.0" text="Back" />
                </children>
             </HBox>
          </children>

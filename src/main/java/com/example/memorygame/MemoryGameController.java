@@ -40,6 +40,44 @@ public class MemoryGameController implements Initializable {
     private MemoryCard firstCard, secondCard;
     private int numOfGuess;
     private int numOfMatches;
+    private int currentLevel;
+
+    @FXML
+    private Label titleLabel; // เชื่อมโยงกับ fx:id="titleLabel"
+
+    // ฟังก์ชันนี้จะรับระดับด่านจาก ThemeController
+    public void setLevel(int level) {
+        this.currentLevel = level;
+        adjustGameSettingsForLevel(level);
+    }
+
+    // ปรับการตั้งค่าของเกมตามระดับด่าน
+    private void adjustGameSettingsForLevel(int level) {
+        switch (level) {
+            case 1:
+                // ปรับการตั้งค่าเกมสำหรับด่าน 1 (ง่าย)
+                titleLabel.setText("Level 1: Easy");
+                System.out.println("Game started at Level 1 (Easy)");
+                break;
+            case 2:
+                // ปรับการตั้งค่าเกมสำหรับด่าน 2 (กลาง)
+                titleLabel.setText("Level 2: Medium");
+                System.out.println("Game started at Level 2 (Medium)");
+                break;
+            case 3:
+                // ปรับการตั้งค่าเกมสำหรับด่าน 3 (ยาก)
+                titleLabel.setText("Level 3: Hard");
+                System.out.println("Game started at Level 3 (Hard)");
+                break;
+            case 4:
+                // ปรับการตั้งค่าเกมสำหรับด่าน 4 (เชี่ยวชาญ)
+                titleLabel.setText("Level 4: Expert");
+                System.out.println("Game started at Level 4 (Expert)");
+                break;
+            default:
+                System.out.println("Unknown Level");
+        }
+    }
 
     @FXML
     void playAgain() {

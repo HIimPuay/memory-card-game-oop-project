@@ -38,3 +38,20 @@
     -fx-font-weight: bold;
     -fx-text-fill: #abb2bf; /* Light gray text color */
 }
+
+/* alertStyle.css */
+
+.alert {
+    -fx-background-color: #e1f5fe;
+    -fx-text-fill: #1976d2;
+    -fx-font-size: 16px;
+}
+
+.alert .header {
+    -fx-font-weight: bold;
+    -fx-text-fill: #0288d1;
+}
+
+.alert .content {
+    -fx-font-style: italic;
+}

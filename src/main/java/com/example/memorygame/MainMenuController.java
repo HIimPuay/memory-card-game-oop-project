@@ -13,29 +13,25 @@ import javafx.stage.Stage;
 public class MainMenuController {
 
     @FXML
-    private void handleStartGame(ActionEvent event) {
-        try {
-            // โหลด FXML ของ Memory Game
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("memory-game.fxml"));
-            Scene scene = new Scene(fxmlLoader.load());
+    private void handleStartGame(ActionEvent event) throws IOException {
 
-            // นำ Stage (หน้าต่างปัจจุบัน) มาจาก ActionEvent
-            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        // โหลด FXML ของ Memory Game
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Theme.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
 
-            // เปลี่ยน Scene ไปที่ Memory Game
-            stage.setTitle("Memory Game");
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException e) {
-            // จัดการข้อผิดพลาดหากไม่สามารถโหลด FXML ได้
-            System.err.println("Error loading memory-game.fxml: " + e.getMessage());
-            e.printStackTrace();
-        }
+        // นำ Stage (หน้าต่างปัจจุบัน) มาจาก ActionEvent
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        // เปลี่ยน Scene ไปที่ Memory Game
+        stage.setTitle("Memory Card Game");
+        stage.setScene(scene);
+        stage.show();
+
     }
 
     @FXML
-    private void handleViewHighScores(ActionEvent event) {
-        System.out.println("Viewing High Scores...");
+    private void handleHowtoplay(ActionEvent event) {
+        System.out.println("How to play...");
         // Add logic to display High Scores
     }
 
